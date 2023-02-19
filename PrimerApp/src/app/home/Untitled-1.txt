@@ -1,0 +1,106 @@
+// 1. Realice los siguientes puntos.
+
+// a) Mostrar el resultado en una ventana
+alert("Bienvenidos al Curso de Programación Front-End II"); 
+
+// b) Mostrar el resultado en la consola
+console.log("Bienvenidos al Curso de Programación Front-End II"); 
+
+// c) Mostrar el resultado en la página web.
+document.write("Bienvenidos al Curso de Programación Front-End II ");
+
+
+
+  // 2. Declaraciones var vs let
+
+// a) Ejemplificar los ámbitos para las variables en JavaScript.
+
+// Global
+var mensaje = "Hola Mundo";
+console.log(mensaje);
+
+// Función
+var mensaje1 = 1;
+if (mensaje1 == 1){
+var mensaje1="Hola";
+  console.log(mensaje1);
+}
+else{
+  var mensaje1="Adios";
+  console.log(mensaje1);
+}
+
+
+// b) Nuevo tipo de iniciador de variables, let 
+let mensaje = "Hola Mundo";
+console.log(mensaje);
+
+
+// c) No hay redeclaraciones.
+var mensaje = ("Hola");
+var mensaje = ("Hola 2");
+console.log(mensaje);
+
+// ¿Cuál es el resultado? 
+// Hola2
+
+
+var mensaje = ("Hola");
+let mensaje = ("Hola 2");
+console.log(mensaje);
+// ¿Cuál es el resultado ?
+// error a la hora de redeclarar la variable por que no es posible
+
+
+
+// d) Escriba un ejemplo donde describa las diferencias de var y let.
+// variable var
+
+var mensaje1 = 1;
+if (mensaje1 == 1){
+var mensaje1="Hola";
+  console.log(mensaje1);
+}
+else{
+  var mensaje1="Adios";
+  console.log(mensaje1);
+}
+
+
+// variable let
+
+let mensaje1 = 1;
+
+if (mensaje1 = 1){
+ mensaje1="Hola";
+  console.log(mensaje1);
+}
+else{
+  let mensaje1="Adios";
+  console.log(mensaje1);
+}
+
+
+// f) Ejemplique la declaración de constantes en JavaScript, en los dos ámbitos: global y de función.4
+
+const alumno = {
+nombres:"Oliver Jean",
+apellidos: "Mendez Garcia",
+edad: 22
+}
+
+console.log(alumno);
+
+
+// g) Declare un objeto constante con los datos de un estudiante. Cambie al menos una de sus
+//  propiedades.
+
+const alumno = {
+nombres:"Fabian",
+apellidos: "Sanchez",
+edad: 22
+}
+
+alumno.nombres = "luis";
+
+console.log(alumno);

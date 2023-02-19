@@ -1,0 +1,35 @@
+<ion-content>
+   <div class="login-section ion-padding">
+      <div class="heading ion-padding">
+        <h1>Inicia Sesion a continuacion</h1>
+      </div>
+       <div class="login-form ion-padding">
+         <div class="form-input">
+           <ion-icon name="mail"></ion-icon> 
+           
+           <ion-item fill="outline">
+              <ion-label position="floating">correo</ion-label>
+              <ion-input type="email" ngModel email placeholder="fausto155@gmail.com"></ion-input>
+              <ion-note slot="helper">Ingresa un correo valido</ion-note>
+              <ion-note slot="error">Invalid email</ion-note>
+              
+           </ion-item>
+         
+          </div>
+         <div class="form-input">
+           <ion-icon name="lock-closed"></ion-icon> 
+           
+           <ion-item fill="outline">
+             <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" value="password"></ion-input>
+            </ion-item>
+         </div>
+      </div>
+      <div class="action-buttons ion-padding"> 
+        <ion-button shape="round" color="tertiary" size="large" class="login-button">Inicia Sesion</ion-button>   
+        <ion-button size="large" class="password" fill="clear" routerLink="/password">Olvide mi Contraseña?</ion-button>
+        <ion-button size="large" shape="round"class="signup-button" color="tertiary" routerLink="/registration">Registrate</ion-button>
+      </div>  
+     
+   </div>
+</ion-content>
