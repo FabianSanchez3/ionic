@@ -1,13 +1,15 @@
 ion-content{
-    --background: linear-gradient(0deg, rgba(0, 86, 245, 0.7), rgba(246, 254, 1, 0.6)),
-  url("https://cdn.ipadizate.com/2020/08/iOS-14-promotional-gradients-iphone-wallpaper-ar72014-idownloadblog-1.jpeg") no-repeat center center /cover;
+    --background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url("https://cdn.dribbble.com/users/1595839/screenshots/11700339/e213f973-e6b4-48f3-8b0f-eb5644b50475.gif") no-repeat center center /cover;
+    --ion-text-color: rgb(255, 255, 255);
 }
 
 .heading{
     margin-top: 10vh ;
     text-align: center;
+    transform: translateY(-50%);
     h1{
-        font-size: 2.8rem;
+        font-size: 4rem;
         font-weight: bold;
     }
     p{
@@ -16,12 +18,14 @@ ion-content{
 }
 .log{
    text-align: center;
-   margin-top: 50px;
+   margin-top: 100px;
 }
 
 .email-login{
-    margin-top: 45px;
+    margin-top: 150px;
     text-align: center;
+    
+
 
     p{
         color:#ffffff;
@@ -32,6 +36,7 @@ ion-content{
     height: 50px;
     text-align: center;
     font-size: 1.2rem;
+    transform: translateY(-50%);
 
 }
 .Createaccount{
@@ -41,7 +46,10 @@ ion-content{
     margin-left: 20%;
     font-size: 1.2rem;
 
-
 }
+.image{
+    margin-top: 15%;
+}
+
 
   
