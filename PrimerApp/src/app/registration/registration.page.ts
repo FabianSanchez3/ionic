@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from  "@angular/router";
 
 @Component({
@@ -6,11 +7,37 @@ import { Router } from  "@angular/router";
   templateUrl: './registration.page.html',
   styleUrls: ['./registration.page.scss'],
 })
+
 export class RegistrationPage implements OnInit {
+  onRegisterForm!: FormGroup;
+  dayTime!: String;
+  hora = new Date().getHours();
+  [x: string]: any;
 
-  constructor(private  router:  Router) { }
+  constructor(
+    private formBuilder: FormBuilder
+    ) { 
+      this['setImage']();
+    }
 
-  ngOnInit() {
+ ngOnInit() {
+    this.onRegisterForm = this.formBuilder.group({
+      'nombre': [null, Validators.compose([
+        Validators.required
+      ])],
+      'lastname': [null, Validators.compose([
+        Validators.required
+      ])],
+      'user': [null, Validators.compose([
+        Validators.required
+      ])],
+      'email': [null, Validators.compose([
+        Validators.required
+      ])],
+      'password': [null, Validators.compose([
+        Validators.required
+      ])]
+    });
   }
 
 }
